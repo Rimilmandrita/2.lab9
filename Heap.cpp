@@ -12,10 +12,9 @@ class MaxHeap
   int size;
   MaxHeap()
   { 
-    s
-
-
-  //insert function inserts the element at the end,and then reheapifies it upwards
+    size=0;
+    }
+//insert function inserts the element at the end,and then reheapifies it upwards
   void insert(int key)
   {
   int i=size++;
@@ -29,7 +28,11 @@ class MaxHeap
     {
        int temp=maxheap[p];
        maxheap[p]=maxheap[i];
-       maxheap[i]=temp;
+       maxheap[i]=teMaxHeap()
+  { 
+    size=0;
+  }
+mp;
     }
     i=p;
    }
@@ -47,8 +50,6 @@ class MaxHeap
      cout<<"\t"<<maxheap[i];
    }
   }
-
-
  //takes into consideration three cases, size=0, size=1, and size greater than 1
   void remove()   //remove maximum element (i.e., root element)
   {
@@ -105,11 +106,6 @@ class MaxHeap
   }
  }
 };
-
-
-//1711106
-//Rimilmandrita Ghosh
-
 
 int main()
 {
